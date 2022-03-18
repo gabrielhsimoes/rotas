@@ -12,17 +12,21 @@
         <a class="nav-link" routerLink="/cursos" [queryParams]="{pagina:1}">Cursos</a>
       </li>
 
-      <li  routerLinkActive="active" class="nav-item">
+      <!-- <li  routerLinkActive="active" class="nav-item">
         <a class="nav-link" [routerLink]="['curso', idCurso.value]">Curso com id</a>
-      </li>
+      </li> -->
      
+      <li  routerLinkActive="active" class="nav-item">
+        <a class="nav-link" routerLink="/alunos">Alunos</a>
+      </li>
+
     </ul>
   </div>
 </nav>
 
 <div class="container">
-  <p>Entre com o id do curso</p>
-  <input type="text" #idCurso>
+  <!-- <p>Entre com o id do curso</p>
+  <input type="text" #idCurso> -->
   <router-outlet></router-outlet>
 </div>
 
