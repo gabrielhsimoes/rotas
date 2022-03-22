@@ -5,6 +5,8 @@ import { AlunoFormComponent } from '../aluno-form/aluno-form.component';
 import { AlunosRoutingModule } from '../alunos.routing.module';
 import { AlunosService } from '../alunos.service';
 import { FormsModule } from '@angular/forms';
+import { AlunosDeactivateGuard } from 'src/app/guard/alunos-deactivate.guard';
+import { AlunoDetalheResolver } from '../guards/aluno-detalhe.resolver';
 
 
 
@@ -19,7 +21,9 @@ import { FormsModule } from '@angular/forms';
     FormsModule
   ],
   providers: [
-    AlunosService
+    AlunosService, 
+    AlunosDeactivateGuard,
+    AlunoDetalheResolver
   ]
 })
 export class AlunosModule { }

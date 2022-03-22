@@ -16,6 +16,7 @@ import { FormsModule } from '@angular/forms';
 import { AuthGuard } from './guard/auth.guard';
 import { CursosGuard } from './guard/cursos.guard';
 import { AlunosGuard } from './guard/alunos.guard';
+import { PaginaNaoEncontradaComponent } from './pagina-nao-encontrada/pagina-nao-encontrada.component';
 // import { CursosModule } from './cursos/cursos.module';
 // import { AlunosModule } from './alunos/alunos/alunos.module';
 
@@ -24,6 +25,7 @@ import { AlunosGuard } from './guard/alunos.guard';
     AppComponent,
     HomeComponent,
     LoginComponent,
+    PaginaNaoEncontradaComponent
   ],
   imports: [
     BrowserModule,
